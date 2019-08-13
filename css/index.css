@@ -69,7 +69,12 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 80;
     margin: 2% 10%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+
+hr {
+    border: 1px solid black;
+    width: 93%;
 }
 
 /* .navDiv {
@@ -194,209 +199,30 @@ header .title button {
     margin: 30px 0px;
 }
 
-/* .bottom-content {
+.bottom-content {
     width: 100%;
     display: flex;
-} */
+    justify-content: center;
+}
 
-/* .bottom-content div { */
-    /* display: inline-block; */
-    /* width: 33%;
+.bottom-content div {
+    width: 31.5%;
     text-align: justify;
     padding: 10px;
-} */
+}
 
-/* .contact {
-    margin-top: 30px;
-} */
+.contact {
+    margin-top: 3%;
+    margin-left: 4%;
+}
 
 /* body { centers the website
     width: 60%;
     margin: 0 auto;
 } */
 
-/* footer {
+footer {
     margin-top: 50px;
     text-align: center;
-} */
+}
 
-/*-----------------------Services CSS --------------------*/
-
-/* .servLogo {
-    height: 35px;
-	margin-top: 15px;
-    padding-left: 100px;
-} */
-
-/* .servTitle {
-    margin: 20px 0px;
-    font-size: 20pt;
-} */
-
-/* .servP {
-    margin-bottom: 40px;
-} */
-
-/* .digDes, .uxUi, .digMark, .webDev, .iOS, .android {
-    border: 1px solid black;
-} */
-
-/*---------------------first box code--------------------*/
-
-/* .firstBox {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0px;
-} */
-
-/* .firstBox div {
-  width: 48%;
-  height: 230px;
-  padding: 20px;
-  background-color: #F5F5F5;
-  text-align: justify;
-} */
-
-/* .firstBox button {
-    justify-content: start;
-    margin-top: 20px;
-    width: 125px;
-    height: 30px;
-    border: 1px solid black;
-    border-radius: 5px;
-} */
-
-/*--------------------second box code----------------------*/
-
-/* .secondBox {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0px;
-} */
-
-/* .secondBox div {
-  width: 48%;
-  height: 230px;
-  padding: 20px;
-  background-color: #F5F5F5;
-  text-align: justify;
-} */
-
-/* .secondBox button {
-    justify-content: start;
-    margin-top: 20px;
-    width: 125px;
-    height: 30px;
-    border: 1px solid black;
-    border-radius: 5px;
-} */
-
-/*-------------------third box code------------------------*/
-
-/* .thirdBox {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0px;
-} */
-
-/* .thirdBox div {
-  width: 48%;
-  height: 230px;
-  padding: 20px;
-  background-color: #F5F5F5;
-  text-align: justify;
-} */
-
-/* .thirdBox button {
-    justify-content: start;
-    margin-top: 20px;
-    width: 125px;
-    height: 30px;
-    border: 1px solid black;
-    border-radius: 5px;
-} */
-
-/*-------------------code for bottom content--------------------*/
-
-/* .servFacts {
-    margin-top: 30px; */
-    /* border: 1px solid red;
-}*/
-
-/* ul {
-    list-style-type: disc;
-} */
-
-/* li {
-    padding: 5px;
-    margin-left: 4.5%;
-    margin-top: 5px;
-} */
-
-/* .bottomContent {
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* .list {
-    margin-top: 25px;
-} */
-
-/* .services-info-img {
-    margin-top: 7%;
-} */
-
-/* .bottomP {
-    width: 90%;
-    height: 30%;
-} */
-
-/* .pita {
-    display: flex;
-    flex-direction: column;
-} */
-
-/* @media screen and (max-width:800px) {
-    .circlePic {
-        display: none;
-    } */
-
-    /* .navDiv {
-        flex-direction: column-reverse;
-        
-    } */
-
-    /* nav {
-        justify-content: space-around;
-    } */
-
-    /* .title {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-
-    } */
-
-    /* header {
-        margin: 8% 0;
-    } */
-
-    /* .top-content {
-        width: 100%;
-    
-    } */
-
-    /* .middle-img {
-        width: 100%;
-    } */
-
-    /* .bottom-content {
-        width: 100%;
-    } */
-
-    /* .contact {
-        width: 100%;
-        margin-left: 1%;
-    } */
