@@ -69,7 +69,6 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 80;
     margin: 2% 10%;
-    border: 1px solid red;
 }
 
 hr {
@@ -77,23 +76,11 @@ hr {
     width: 93%;
 }
 
-/* .navDiv {
-    display: flex;
-    justify-content: space-between;
-} */
-
 .navDiv {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-/* nav {
-    margin: auto;
-	width: 100%;
-    display: flex;
-    border:
-} */
 
 nav {
     width: 80%;
@@ -102,56 +89,22 @@ nav {
     padding-right: 10%;
 }
 
-/* nav a {
-    text-decoration: none;
-    color: grey;
-    padding: 25px;
-} */
-
 nav a {
     text-decoration: none;
     color: grey;
     padding: 25px;
 }
 
-/*.logo {
-    height: 35px;
-	/* height: 35px;
-	margin-top: 15px;
-    padding-left: 50px; */
-    /* align-self: center;
-    width: 27%;
-    height: 12% 
-} */
-
 .logo {
     height: 40px;
     width: 180px;
 }
-
-/* header {
-    display: flex;
-    justify-content: center;
-	align-items: center;
-    line-height: 0.75; */
-    /* margin: 50px 0px 50px 100px; */
-    /* width: 100%;
-    margin: 30px 0;
-} */
 
 header {
     display: flex;
     justify-content: center;
     margin: 80px 0;
 }
-
-/* .title {
-    font-size: 68px;
-    text-align: center; */
-    /* display: inline-block; */
-    /* margin: 0px 15px;
-    margin-right: 100px;
-} */
 
 .title {
     width: 45%;
@@ -167,13 +120,7 @@ header .title button {
     margin-top: 10px;
     padding: 10px 50px;
     font-size: 14pt; */
-    /* minor tweaks to button after switching to flexbox*/
 }
-
-/*header img {
-    /* display: inline-block;
-    width: 35%;
-}*/
 
 .top-content {
     width: 100%;
@@ -183,7 +130,6 @@ header .title button {
 }
 
 .top-content div {
-    /* display: inline-block; */
     width: 45%;
     text-align: justify;
     padding: 10px;
@@ -216,17 +162,16 @@ header .title button {
     margin-left: 4%;
 }
 
-/* body { centers the website
-    width: 60%;
-    margin: 0 auto;
-} */
-
 footer {
     margin-top: 50px;
     text-align: center;
 }
 
 /*------------media queries--------------*/
+
+
+
+/*---------800px----------*/
 
 @media screen and (max-width: 800px) {
 
@@ -258,4 +203,58 @@ footer {
     footer {
         margin-bottom: 4%;
     }
+}
+
+/*----------500px----------*/
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .services {
+        border-top: 1px solid black;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a { 
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .title button {
+        background: white;
+        padding: 10px 43px;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+
+    .top-content div {
+        width: 95%;
+        margin-left: 2.2%;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        margin-bottom: 4%;
+    }
+
+    .bottom-content div {
+        width: 95%;
+        margin-left: 2.2%;
+    }
+
+    .contact {
+        margin-top: 6%;
+    }
+
 }
