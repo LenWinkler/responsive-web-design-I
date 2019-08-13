@@ -16,35 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
+	display: block;
 }
 body {
-    line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-    list-style: none;
+	list-style: none;
 }
 blockquote, q {
-    quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
@@ -63,13 +63,45 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+
+.container {
+    width: 80;
+    margin: 2% 10%;
+    border: 1px solid red;
+}
+
+/* .navDiv {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.navDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nav {
+    margin: auto;
+	width: 100%;
+    display: flex;
+    border:
+} */
 
 nav {
-    margin: auto;
-    width: 876px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10%;
 }
+
+/* nav a {
+    text-decoration: none;
+    color: grey;
+    padding: 25px;
+} */
 
 nav a {
     text-decoration: none;
@@ -77,81 +109,294 @@ nav a {
     padding: 25px;
 }
 
-nav .logo {
-    padding-left: 50px;
+/*.logo {
+    height: 35px;
+	/* height: 35px;
+	margin-top: 15px;
+    padding-left: 50px; */
+    /* align-self: center;
+    width: 27%;
+    height: 12% 
+} */
+
+.logo {
+    height: 40px;
+    width: 180px;
 }
+
+/* header {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    line-height: 0.75; */
+    /* margin: 50px 0px 50px 100px; */
+    /* width: 100%;
+    margin: 30px 0;
+} */
 
 header {
-    line-height: 0.75;
-    margin: 50px 0px 50px 100px;
-    width: 876px;
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
 }
 
-header .title {
+/* .title {
     font-size: 68px;
-    text-align: center;
-    display: inline-block;
-    margin: 0px 15px;
+    text-align: center; */
+    /* display: inline-block; */
+    /* margin: 0px 15px;
     margin-right: 100px;
+} */
+
+.title {
+    width: 45%;
+    display: flex;
+    font-size: 68px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header .title button {
     border: 1px solid black;
-    margin-top: 0px;
-    padding: 6px 40px;
+    margin-top: 10px;
+    padding: 10px 50px;
+    font-size: 14pt; */
+    /* minor tweaks to button after switching to flexbox*/
 }
 
-header img {
-    display: inline-block;
+/*header img {
+    /* display: inline-block;
     width: 35%;
-}
+}*/
 
 .top-content {
-    width: 876px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
 
 .top-content div {
-    display: inline-block;
-    width: 49%;
+    /* display: inline-block; */
+    width: 45%;
     text-align: justify;
     padding: 10px;
+}
+
+.middleImg {
+    display: flex;
+    justify-content: center;
 }
 
 .middle-img {
+    width:93%;
     margin: 30px 0px;
 }
 
-.bottom-content {
-    width: 876px;
-}
+/* .bottom-content {
+    width: 100%;
+    display: flex;
+} */
 
-.bottom-content div {
-    display: inline-block;
-    width: 33%;
+/* .bottom-content div { */
+    /* display: inline-block; */
+    /* width: 33%;
     text-align: justify;
     padding: 10px;
-}
+} */
 
-.contact {
+/* .contact {
     margin-top: 30px;
-}
+} */
 
-body { /* centers the website */
-    width: 876px;
+/* body { centers the website
+    width: 60%;
     margin: 0 auto;
-}
+} */
 
-footer {
+/* footer {
     margin-top: 50px;
     text-align: center;
-}
+} */
 
-/*----------MEDIA QUERIES------------*/
+/*-----------------------Services CSS --------------------*/
 
-@media screen and (max-width: 800px) {
-    nav {
-        display: flex;
+/* .servLogo {
+    height: 35px;
+	margin-top: 15px;
+    padding-left: 100px;
+} */
+
+/* .servTitle {
+    margin: 20px 0px;
+    font-size: 20pt;
+} */
+
+/* .servP {
+    margin-bottom: 40px;
+} */
+
+/* .digDes, .uxUi, .digMark, .webDev, .iOS, .android {
+    border: 1px solid black;
+} */
+
+/*---------------------first box code--------------------*/
+
+/* .firstBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+} */
+
+/* .firstBox div {
+  width: 48%;
+  height: 230px;
+  padding: 20px;
+  background-color: #F5F5F5;
+  text-align: justify;
+} */
+
+/* .firstBox button {
+    justify-content: start;
+    margin-top: 20px;
+    width: 125px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+} */
+
+/*--------------------second box code----------------------*/
+
+/* .secondBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+} */
+
+/* .secondBox div {
+  width: 48%;
+  height: 230px;
+  padding: 20px;
+  background-color: #F5F5F5;
+  text-align: justify;
+} */
+
+/* .secondBox button {
+    justify-content: start;
+    margin-top: 20px;
+    width: 125px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+} */
+
+/*-------------------third box code------------------------*/
+
+/* .thirdBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+} */
+
+/* .thirdBox div {
+  width: 48%;
+  height: 230px;
+  padding: 20px;
+  background-color: #F5F5F5;
+  text-align: justify;
+} */
+
+/* .thirdBox button {
+    justify-content: start;
+    margin-top: 20px;
+    width: 125px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+} */
+
+/*-------------------code for bottom content--------------------*/
+
+/* .servFacts {
+    margin-top: 30px; */
+    /* border: 1px solid red;
+}*/
+
+/* ul {
+    list-style-type: disc;
+} */
+
+/* li {
+    padding: 5px;
+    margin-left: 4.5%;
+    margin-top: 5px;
+} */
+
+/* .bottomContent {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* .list {
+    margin-top: 25px;
+} */
+
+/* .services-info-img {
+    margin-top: 7%;
+} */
+
+/* .bottomP {
+    width: 90%;
+    height: 30%;
+} */
+
+/* .pita {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* @media screen and (max-width:800px) {
+    .circlePic {
+        display: none;
+    } */
+
+    /* .navDiv {
         flex-direction: column-reverse;
+        
+    } */
+
+    /* nav {
+        justify-content: space-around;
+    } */
+
+    /* .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-    }
-}
+        margin: 0;
+
+    } */
+
+    /* header {
+        margin: 8% 0;
+    } */
+
+    /* .top-content {
+        width: 100%;
+    
+    } */
+
+    /* .middle-img {
+        width: 100%;
+    } */
+
+    /* .bottom-content {
+        width: 100%;
+    } */
+
+    /* .contact {
+        width: 100%;
+        margin-left: 1%;
+    } */
