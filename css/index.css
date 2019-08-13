@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 80;
     margin: 2% 10%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 hr {
@@ -226,3 +226,36 @@ footer {
     text-align: center;
 }
 
+/*------------media queries--------------*/
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        width: 83%;
+        margin: 0 auto;
+    }
+
+    .circlePic {
+        display: none;
+    }
+
+    .navDiv {
+        flex-direction: column-reverse;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0;
+        margin-top: 3%;
+        align-self: center;
+
+    }
+
+    .logo {
+        margin-top: 4%; 
+    }
+
+    footer {
+        margin-bottom: 4%;
+    }
+}
